@@ -4,10 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>rns-ios-testapp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>rns-ios.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7831926222A5B11B005AA2E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7831927522A5B11D005AA2E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7831928022A5B11E005AA2E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>78470490228CAFD800477999</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>78470499228CAFD800477999</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

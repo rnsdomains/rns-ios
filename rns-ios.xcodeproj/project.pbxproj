@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DC41BDDA9FEAEB85510A686 /* Pods_rns_ios_rns_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02D902C98A847C7E797B3A5 /* Pods_rns_ios_rns_iosTests.framework */; };
+		7810FA8F22A1ABC600B8D0E7 /* RnsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810FA8E22A1ABC600B8D0E7 /* RnsResolver.swift */; };
+		7810FA9122A1AC5F00B8D0E7 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810FA9022A1AC5F00B8D0E7 /* utils.swift */; };
+		7831925622A4B1A4005AA2E0 /* resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831925522A4B1A4005AA2E0 /* resolver.swift */; };
+		7831925722A4B256005AA2E0 /* erc677ABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B7228CD26100FFF0EA /* erc677ABI.json */; };
+		7831925822A4B256005AA2E0 /* PublicResolverABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B6228CD26100FFF0EA /* PublicResolverABI.json */; };
+		7831925922A4B256005AA2E0 /* RegistrarABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B8228CD26100FFF0EA /* RegistrarABI.json */; };
+		7831925A22A4B256005AA2E0 /* RegistryABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B5228CD26000FFF0EA /* RegistryABI.json */; };
+		7831925B22A4B264005AA2E0 /* erc677ABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B7228CD26100FFF0EA /* erc677ABI.json */; };
+		7831925C22A4B264005AA2E0 /* PublicResolverABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B6228CD26100FFF0EA /* PublicResolverABI.json */; };
+		7831925D22A4B264005AA2E0 /* RegistrarABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B8228CD26100FFF0EA /* RegistrarABI.json */; };
+		7831925E22A4B264005AA2E0 /* RegistryABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B5228CD26000FFF0EA /* RegistryABI.json */; };
 		7847049B228CAFD800477999 /* rns_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78470491228CAFD800477999 /* rns_ios.framework */; };
-		784704A0228CAFD800477999 /* rns_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7847049F228CAFD800477999 /* rns_iosTests.swift */; };
 		784704A2228CAFD800477999 /* rns_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 78470494228CAFD800477999 /* rns_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		788083C9228DE0B200FFF0EA /* ens_namehash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788083C8228DE0B200FFF0EA /* ens_namehash.swift */; };
+		8C163F6F00EC694A85FD5EB3 /* Pods_rns_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D621FD71887E5DF1F36D71EF /* Pods_rns_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,13 +35,46 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		783192A522A5BFC8005AA2E0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7810FA8E22A1ABC600B8D0E7 /* RnsResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnsResolver.swift; sourceTree = "<group>"; };
+		7810FA9022A1AC5F00B8D0E7 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		7831925522A4B1A4005AA2E0 /* resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resolver.swift; sourceTree = "<group>"; };
+		783192BB22A5D90E005AA2E0 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192BD22A5D90E005AA2E0 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192BF22A5D90E005AA2E0 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192C122A5D90E005AA2E0 /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192C322A5D90E005AA2E0 /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192C522A5D90E005AA2E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192C722A5D90E005AA2E0 /* Web3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Web3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192D722A5E1EF005AA2E0 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78470491228CAFD800477999 /* rns_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rns_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78470494228CAFD800477999 /* rns_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rns_ios.h; sourceTree = "<group>"; };
 		78470495228CAFD800477999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7847049A228CAFD800477999 /* rns-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "rns-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7847049F228CAFD800477999 /* rns_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rns_iosTests.swift; sourceTree = "<group>"; };
 		784704A1228CAFD800477999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		788083B5228CD26000FFF0EA /* RegistryABI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RegistryABI.json; sourceTree = "<group>"; };
+		788083B6228CD26100FFF0EA /* PublicResolverABI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PublicResolverABI.json; sourceTree = "<group>"; };
+		788083B7228CD26100FFF0EA /* erc677ABI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = erc677ABI.json; sourceTree = "<group>"; };
+		788083B8228CD26100FFF0EA /* RegistrarABI.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RegistrarABI.json; sourceTree = "<group>"; };
+		788083C8228DE0B200FFF0EA /* ens_namehash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ens_namehash.swift; sourceTree = "<group>"; };
+		A02D902C98A847C7E797B3A5 /* Pods_rns_ios_rns_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rns_ios_rns_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D621FD71887E5DF1F36D71EF /* Pods_rns_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rns_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E031C8F6823364C168A2D532 /* Pods-rns-ios-rns-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rns-ios-rns-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-rns-ios-rns-iosTests/Pods-rns-ios-rns-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1BC4EC71028A344CCAB9D7E /* Pods-rns-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rns-ios.release.xcconfig"; path = "Target Support Files/Pods-rns-ios/Pods-rns-ios.release.xcconfig"; sourceTree = "<group>"; };
+		ECEE91A80DF040838325238B /* Pods-rns-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rns-ios.debug.xcconfig"; path = "Target Support Files/Pods-rns-ios/Pods-rns-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		ECFA84DA4077052529CC65B5 /* Pods-rns-ios-rns-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rns-ios-rns-iosTests.release.xcconfig"; path = "Target Support Files/Pods-rns-ios-rns-iosTests/Pods-rns-ios-rns-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C163F6F00EC694A85FD5EB3 /* Pods_rns_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +91,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				7847049B228CAFD800477999 /* rns_ios.framework in Frameworks */,
+				1DC41BDDA9FEAEB85510A686 /* Pods_rns_ios_rns_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AC535920FF60C9667013523 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				783192D722A5E1EF005AA2E0 /* BigInt.framework */,
+				783192BB22A5D90E005AA2E0 /* BigInt.framework */,
+				783192BD22A5D90E005AA2E0 /* CryptoSwift.framework */,
+				783192BF22A5D90E005AA2E0 /* PromiseKit.framework */,
+				783192C122A5D90E005AA2E0 /* secp256k1.framework */,
+				783192C322A5D90E005AA2E0 /* SipHash.framework */,
+				783192C522A5D90E005AA2E0 /* SwiftyJSON.framework */,
+				783192C722A5D90E005AA2E0 /* Web3.framework */,
+				D621FD71887E5DF1F36D71EF /* Pods_rns_ios.framework */,
+				A02D902C98A847C7E797B3A5 /* Pods_rns_ios_rns_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		78470487228CAFD800477999 = {
 			isa = PBXGroup;
 			children = (
+				788083B7228CD26100FFF0EA /* erc677ABI.json */,
+				788083B6228CD26100FFF0EA /* PublicResolverABI.json */,
+				788083B8228CD26100FFF0EA /* RegistrarABI.json */,
+				788083B5228CD26000FFF0EA /* RegistryABI.json */,
+				788083BD228CD35600FFF0EA /* Resources */,
 				78470493228CAFD800477999 /* rns-ios */,
 				7847049E228CAFD800477999 /* rns-iosTests */,
 				78470492228CAFD800477999 /* Products */,
+				F6579C73541B6627EA5AE846 /* Pods */,
+				5AC535920FF60C9667013523 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +145,9 @@
 			children = (
 				78470494228CAFD800477999 /* rns_ios.h */,
 				78470495228CAFD800477999 /* Info.plist */,
+				788083C8228DE0B200FFF0EA /* ens_namehash.swift */,
+				7810FA8E22A1ABC600B8D0E7 /* RnsResolver.swift */,
+				7810FA9022A1AC5F00B8D0E7 /* utils.swift */,
 			);
 			path = "rns-ios";
 			sourceTree = "<group>";
@@ -80,10 +155,28 @@
 		7847049E228CAFD800477999 /* rns-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				7847049F228CAFD800477999 /* rns_iosTests.swift */,
+				7831925522A4B1A4005AA2E0 /* resolver.swift */,
 				784704A1228CAFD800477999 /* Info.plist */,
 			);
 			path = "rns-iosTests";
+			sourceTree = "<group>";
+		};
+		788083BD228CD35600FFF0EA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F6579C73541B6627EA5AE846 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECEE91A80DF040838325238B /* Pods-rns-ios.debug.xcconfig */,
+				E1BC4EC71028A344CCAB9D7E /* Pods-rns-ios.release.xcconfig */,
+				E031C8F6823364C168A2D532 /* Pods-rns-ios-rns-iosTests.debug.xcconfig */,
+				ECFA84DA4077052529CC65B5 /* Pods-rns-ios-rns-iosTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 784704A5228CAFD900477999 /* Build configuration list for PBXNativeTarget "rns-ios" */;
 			buildPhases = (
+				C10B8442FEC31AD6DC3A149B /* [CP] Check Pods Manifest.lock */,
 				7847048C228CAFD800477999 /* Headers */,
 				7847048D228CAFD800477999 /* Sources */,
 				7847048E228CAFD800477999 /* Frameworks */,
 				7847048F228CAFD800477999 /* Resources */,
+				783192A522A5BFC8005AA2E0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -122,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 784704A8228CAFD900477999 /* Build configuration list for PBXNativeTarget "rns-iosTests" */;
 			buildPhases = (
+				E8B056B30274DBE49734BD35 /* [CP] Check Pods Manifest.lock */,
 				78470496228CAFD800477999 /* Sources */,
 				78470497228CAFD800477999 /* Frameworks */,
 				78470498228CAFD800477999 /* Resources */,
+				4CBE96A74639BF3DA6BF1618 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,12 +239,14 @@
 		78470488228CAFD800477999 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Sirius;
 				TargetAttributes = {
 					78470490228CAFD800477999 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					78470499228CAFD800477999 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -160,6 +259,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 78470487228CAFD800477999;
 			productRefGroup = 78470492228CAFD800477999 /* Products */;
@@ -177,6 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7831925B22A4B264005AA2E0 /* erc677ABI.json in Resources */,
+				7831925C22A4B264005AA2E0 /* PublicResolverABI.json in Resources */,
+				7831925D22A4B264005AA2E0 /* RegistrarABI.json in Resources */,
+				7831925E22A4B264005AA2E0 /* RegistryABI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,16 +288,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7831925722A4B256005AA2E0 /* erc677ABI.json in Resources */,
+				7831925822A4B256005AA2E0 /* PublicResolverABI.json in Resources */,
+				7831925922A4B256005AA2E0 /* RegistrarABI.json in Resources */,
+				7831925A22A4B256005AA2E0 /* RegistryABI.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CBE96A74639BF3DA6BF1618 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rns-ios-rns-iosTests/Pods-rns-ios-rns-iosTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Web3/Web3.framework",
+				"${BUILT_PRODUCTS_DIR}/secp256k1.swift/secp256k1.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Web3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/secp256k1.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rns-ios-rns-iosTests/Pods-rns-ios-rns-iosTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C10B8442FEC31AD6DC3A149B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rns-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8B056B30274DBE49734BD35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rns-ios-rns-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7847048D228CAFD800477999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788083C9228DE0B200FFF0EA /* ens_namehash.swift in Sources */,
+				7810FA8F22A1ABC600B8D0E7 /* RnsResolver.swift in Sources */,
+				7810FA9122A1AC5F00B8D0E7 /* utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784704A0228CAFD800477999 /* rns_iosTests.swift in Sources */,
+				7831925622A4B1A4005AA2E0 /* resolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +532,10 @@
 		};
 		784704A6228CAFD900477999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEE91A80DF040838325238B /* Pods-rns-ios.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -349,7 +544,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "rns-ios/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "'@executable_path/../Frameworks'";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,14 +553,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirius.rns-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		784704A7228CAFD900477999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1BC4EC71028A344CCAB9D7E /* Pods-rns-ios.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,7 +573,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "rns-ios/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "'@executable_path/../Frameworks'";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -383,14 +582,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirius.rns-ios";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		784704A9228CAFD900477999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E031C8F6823364C168A2D532 /* Pods-rns-ios-rns-iosTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W285B6L45V;
 				INFOPLIST_FILE = "rns-iosTests/Info.plist";
@@ -401,14 +602,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirius.rns-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		784704AA228CAFD900477999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECFA84DA4077052529CC65B5 /* Pods-rns-ios-rns-iosTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W285B6L45V;
 				INFOPLIST_FILE = "rns-iosTests/Info.plist";
@@ -419,7 +622,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sirius.rns-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
