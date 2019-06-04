@@ -29,7 +29,7 @@ public class RnsResolver {
         }
     }
     
-    func getAddress(name: String) -> Promise<EthereumAddress> {
+    public func getAddress(name: String) -> Promise<EthereumAddress> {
         let nodeAsBytes = BigInt(hexString: String(name.namehash.suffix(64)))
         return loadResolver(node: name).then { resolver in
             firstly {

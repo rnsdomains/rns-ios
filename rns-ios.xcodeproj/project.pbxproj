@@ -19,6 +19,13 @@
 		7831925C22A4B264005AA2E0 /* PublicResolverABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B6228CD26100FFF0EA /* PublicResolverABI.json */; };
 		7831925D22A4B264005AA2E0 /* RegistrarABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B8228CD26100FFF0EA /* RegistrarABI.json */; };
 		7831925E22A4B264005AA2E0 /* RegistryABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B5228CD26000FFF0EA /* RegistryABI.json */; };
+		783192DE22A6A138005AA2E0 /* BigInt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192DD22A6A138005AA2E0 /* BigInt.framework */; };
+		783192E022A6A138005AA2E0 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192DF22A6A138005AA2E0 /* CryptoSwift.framework */; };
+		783192E222A6A138005AA2E0 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E122A6A138005AA2E0 /* PromiseKit.framework */; };
+		783192E422A6A138005AA2E0 /* secp256k1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E322A6A138005AA2E0 /* secp256k1.framework */; };
+		783192E622A6A138005AA2E0 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E522A6A138005AA2E0 /* SipHash.framework */; };
+		783192E822A6A138005AA2E0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E722A6A138005AA2E0 /* SwiftyJSON.framework */; };
+		783192EA22A6A138005AA2E0 /* Web3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E922A6A138005AA2E0 /* Web3.framework */; };
 		7847049B228CAFD800477999 /* rns_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78470491228CAFD800477999 /* rns_ios.framework */; };
 		784704A2228CAFD800477999 /* rns_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 78470494228CAFD800477999 /* rns_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		788083C9228DE0B200FFF0EA /* ens_namehash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788083C8228DE0B200FFF0EA /* ens_namehash.swift */; };
@@ -36,13 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		783192A522A5BFC8005AA2E0 /* CopyFiles */ = {
+		783192A522A5BFC8005AA2E0 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -59,6 +67,13 @@
 		783192C522A5D90E005AA2E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192C722A5D90E005AA2E0 /* Web3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Web3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192D722A5E1EF005AA2E0 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192DD22A6A138005AA2E0 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192DF22A6A138005AA2E0 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192E122A6A138005AA2E0 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192E322A6A138005AA2E0 /* secp256k1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = secp256k1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192E522A6A138005AA2E0 /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192E722A6A138005AA2E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		783192E922A6A138005AA2E0 /* Web3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Web3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78470491228CAFD800477999 /* rns_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rns_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78470494228CAFD800477999 /* rns_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rns_ios.h; sourceTree = "<group>"; };
 		78470495228CAFD800477999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,6 +97,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				783192DE22A6A138005AA2E0 /* BigInt.framework in Frameworks */,
+				783192E022A6A138005AA2E0 /* CryptoSwift.framework in Frameworks */,
+				783192E222A6A138005AA2E0 /* PromiseKit.framework in Frameworks */,
+				783192E422A6A138005AA2E0 /* secp256k1.framework in Frameworks */,
+				783192E622A6A138005AA2E0 /* SipHash.framework in Frameworks */,
+				783192E822A6A138005AA2E0 /* SwiftyJSON.framework in Frameworks */,
+				783192EA22A6A138005AA2E0 /* Web3.framework in Frameworks */,
 				8C163F6F00EC694A85FD5EB3 /* Pods_rns_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +123,13 @@
 		5AC535920FF60C9667013523 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				783192DD22A6A138005AA2E0 /* BigInt.framework */,
+				783192DF22A6A138005AA2E0 /* CryptoSwift.framework */,
+				783192E122A6A138005AA2E0 /* PromiseKit.framework */,
+				783192E322A6A138005AA2E0 /* secp256k1.framework */,
+				783192E522A6A138005AA2E0 /* SipHash.framework */,
+				783192E722A6A138005AA2E0 /* SwiftyJSON.framework */,
+				783192E922A6A138005AA2E0 /* Web3.framework */,
 				783192D722A5E1EF005AA2E0 /* BigInt.framework */,
 				783192BB22A5D90E005AA2E0 /* BigInt.framework */,
 				783192BD22A5D90E005AA2E0 /* CryptoSwift.framework */,
@@ -202,7 +231,7 @@
 				7847048D228CAFD800477999 /* Sources */,
 				7847048E228CAFD800477999 /* Frameworks */,
 				7847048F228CAFD800477999 /* Resources */,
-				783192A522A5BFC8005AA2E0 /* CopyFiles */,
+				783192A522A5BFC8005AA2E0 /* Copy Files */,
 			);
 			buildRules = (
 			);

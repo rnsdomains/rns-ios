@@ -88,8 +88,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = 'rns-ios*' , 'Classes/*', 'Resource/*'  # spec.exclude_files = "Classes/Exclude"
+  spec.source_files = 'rns-ios/*' , 'Classes/*', 'Resource/*'  # spec.exclude_files = "Classes/Exclude"
 
+  spec.dependency 'Web3'
+  spec.dependency 'Web3/ContractABI'
+  spec.dependency 'SwiftyJSON', '~> 4.0'
+  spec.dependency 'Web3/PromiseKit'
   # spec.public_header_files = "Classes/**/*.h"
 
 
