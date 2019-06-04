@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "rns-ios"
+  spec.name         = "Rns"
   spec.version      = "0.0.2"
   spec.summary      = "RSK public address resolver"
 
