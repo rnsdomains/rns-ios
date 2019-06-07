@@ -26,6 +26,8 @@
 		783192E622A6A138005AA2E0 /* SipHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E522A6A138005AA2E0 /* SipHash.framework */; };
 		783192E822A6A138005AA2E0 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E722A6A138005AA2E0 /* SwiftyJSON.framework */; };
 		783192EA22A6A138005AA2E0 /* Web3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783192E922A6A138005AA2E0 /* Web3.framework */; };
+		7831932922A8349F005AA2E0 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831932822A8349F005AA2E0 /* config.swift */; };
+		7831932C22A9A462005AA2E0 /* RskAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831932B22A9A462005AA2E0 /* RskAddress.swift */; };
 		7847049B228CAFD800477999 /* rns_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78470491228CAFD800477999 /* rns_ios.framework */; };
 		784704A2228CAFD800477999 /* rns_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 78470494228CAFD800477999 /* rns_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		788083C9228DE0B200FFF0EA /* ens_namehash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788083C8228DE0B200FFF0EA /* ens_namehash.swift */; };
@@ -74,6 +76,8 @@
 		783192E522A6A138005AA2E0 /* SipHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SipHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192E722A6A138005AA2E0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192E922A6A138005AA2E0 /* Web3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Web3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7831932822A8349F005AA2E0 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		7831932B22A9A462005AA2E0 /* RskAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RskAddress.swift; sourceTree = "<group>"; };
 		78470491228CAFD800477999 /* rns_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rns_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78470494228CAFD800477999 /* rns_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rns_ios.h; sourceTree = "<group>"; };
 		78470495228CAFD800477999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -177,6 +181,8 @@
 				788083C8228DE0B200FFF0EA /* ens_namehash.swift */,
 				7810FA8E22A1ABC600B8D0E7 /* RnsResolver.swift */,
 				7810FA9022A1AC5F00B8D0E7 /* utils.swift */,
+				7831932822A8349F005AA2E0 /* config.swift */,
+				7831932B22A9A462005AA2E0 /* RskAddress.swift */,
 			);
 			path = "rns-ios";
 			sourceTree = "<group>";
@@ -413,8 +419,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				788083C9228DE0B200FFF0EA /* ens_namehash.swift in Sources */,
+				7831932922A8349F005AA2E0 /* config.swift in Sources */,
 				7810FA8F22A1ABC600B8D0E7 /* RnsResolver.swift in Sources */,
 				7810FA9122A1AC5F00B8D0E7 /* utils.swift in Sources */,
+				7831932C22A9A462005AA2E0 /* RskAddress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,14 +15,13 @@ public class RnsResolver {
     var rnsContract: DynamicContract
     var web3: Web3
     var publicResolverAddress: String
-
-    public init?(nodeDir: String, publicResolverAddress: String, rnsAddress: String) {
+    
+    public init?(nodeDir: String = NODE, publicResolverAddress: String = RESOLVER_ADDRESS, rnsAddress: String = RNS_ADDRESS) {
         do {
             let jsonABI = importJson(name: "RegistryABI")
             self.web3 = Web3(rpcURL: nodeDir)
             self.rnsContract = try web3.eth.Contract(json: jsonABI, abiKey: nil, address: EthereumAddress(hex: rnsAddress, eip55: false))
             self.publicResolverAddress = publicResolverAddress
-            
         }
         catch _ {
             return nil
@@ -31,6 +30,7 @@ public class RnsResolver {
     
     public func getAddress(name: String) -> Promise<EthereumAddress> {
         let nodeAsBytes = BigInt(hexString: String(name.namehash.suffix(64)))
+        
         return loadResolver(node: name).then { resolver in
             firstly {
                 resolver["addr"]!(nodeAsBytes!).call()

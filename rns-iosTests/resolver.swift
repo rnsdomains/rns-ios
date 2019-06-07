@@ -22,7 +22,7 @@ class resolver: XCTestCase {
     }
 
     func testAddressOne() {
-        let resolver = RnsResolver(nodeDir: "https://public-node.rsk.co", publicResolverAddress: "0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a", rnsAddress: "0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5")
+        let resolver = RnsResolver()
         let expectation = self.expectation(description: "Resolving")
         resolver?.getAddress(name: "ilan.max.rsk").map {
             result in
