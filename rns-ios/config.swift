@@ -8,3 +8,4 @@
 public let NODE = Bundle.main.object(forInfoDictionaryKey: "NODE") as! String
 public let RESOLVER_ADDRESS = Bundle.main.object(forInfoDictionaryKey: "RESOLVER_ADDRESS") as! String
 public let RNS_ADDRESS = Bundle.main.object(forInfoDictionaryKey: "RNS_ADDRESS") as! String
+public let NO_RESPONSE = "0x0000000000000000000000000000000000000000"
