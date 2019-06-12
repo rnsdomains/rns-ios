@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Rns"
-  spec.version      = "0.0.6"
+  spec.version      = "0.0.7"
   spec.summary      = "RNS"
   spec.ios.deployment_target = '8.0'
   spec.swift_version = "4.0"
