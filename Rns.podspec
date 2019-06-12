@@ -17,8 +17,9 @@ Pod::Spec.new do |spec|
 
   spec.name         = "Rns"
   spec.version      = "0.0.6"
-  spec.summary      = "RSK public address resolver"
-
+  spec.summary      = "RNS"
+  spec.ios.deployment_target = '8.0'
+  spec.swift_version = "4.0"
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
@@ -88,7 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = 'rns-ios/*' , 'Classes/*', 'Resource/*'  # spec.exclude_files = "Classes/Exclude"
+  spec.source_files = 'rns-ios/*' , 'Classes/*', 'Resource/*'
+  spec.exclude_files = 'rns-ios/**/*.plist'
+
 
   spec.dependency 'Web3'
   spec.dependency 'Web3/ContractABI'
