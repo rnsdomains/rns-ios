@@ -28,7 +28,7 @@ class resolver: XCTestCase {
             resolver.getAddress(name: "ilan.max.rsk").map {
                 result in
                 expectation.fulfill()
-                XCTAssertEqual(result.hex(eip55: false),"0xa78c937844b27bec024f042dcbe5b85d2b7344f6" , "1 + 1 = 2")
+                XCTAssertEqual(result.hex(eip55: false),"0xa78c937844b27bec024f042dcbe5b85d2b7344f6" , "Should give a valid result")
             }
             waitForExpectations(timeout: 30, handler: nil)
         }
@@ -44,7 +44,7 @@ class resolver: XCTestCase {
             resolver.getAddress(name: "alecavallero.rsk").map {
                 result in
                 expectation.fulfill()
-                XCTAssertEqual(result.hex(eip55: false),"0xa78c937844b27bec024f042dcbe5b85d2b7344f6" , "1 + 1 = 2")
+                XCTAssertEqual(result.hex(eip55: false),"0xa78c937844b27bec024f042dcbe5b85d2b7344f6" , "Should give a valid result")
             }
             waitForExpectations(timeout: 30, handler: nil)
         }
@@ -60,8 +60,8 @@ class resolver: XCTestCase {
             resolver.getAddress(name: "consensus.rsk").map {
                 result in
                 expectation.fulfill()
-                XCTAssertEqual(result.hex(eip55: false),"0x0000000000000000000000000000000000000000" , "1 + 1 = 2")
-            }
+                XCTAssertEqual(result.hex(eip55: false),"0x0000000000000000000000000000000000000000" , "Should give a blank result")
+                }.catch{err in print(err) }
             waitForExpectations(timeout: 30, handler: nil)
         }
         catch _ {

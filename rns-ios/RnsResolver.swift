@@ -25,11 +25,16 @@ public class RnsResolver {
      *
      * - throws: EthereumAddress.Error.addressMalformed if the given hex string doesn't fulfill the conditions.
      */
-    public init(nodeDir: String = NODE, publicResolverAddress: String = RESOLVER_ADDRESS, rnsAddress: String = RNS_ADDRESS) throws {
-        let jsonABI = importJson(name: "RegistryABI")
-        self.web3 = Web3(rpcURL: nodeDir)
-        self.rnsContract = try web3.eth.Contract(json: jsonABI, abiKey: nil, address: EthereumAddress(hex: rnsAddress, eip55: false))
-        self.publicResolverAddress = publicResolverAddress
+    public init?(nodeDir: String = NODE, publicResolverAddress: String = RESOLVER_ADDRESS, rnsAddress: String = RNS_ADDRESS) {
+        do {
+            let jsonABI = importJson(name: "RegistryABI")
+            self.web3 = Web3(rpcURL: nodeDir)
+            self.rnsContract = try web3.eth.Contract(json: jsonABI, abiKey: nil, address: EthereumAddress(hex: rnsAddress, eip55: false))
+            self.publicResolverAddress = publicResolverAddress
+        }
+        catch _ {
+            return nil
+        }
     }
     
     /**
@@ -50,7 +55,7 @@ public class RnsResolver {
                     print(address.hex(eip55: false))
                     return RskAddress(ethereumAddress: address)
                 }
-        }
+            }
     }
     
     /**
@@ -63,7 +68,13 @@ public class RnsResolver {
             self.rnsContract["resolver"]!(nodeAsBytes!).call()
             }.map { response in
                 do {
-                    let resolverAdress = response[""]! as! EthereumAddress
+                    let resolverAdress: EthereumAddress = {
+                        if response[""] != nil {
+                            return response[""]! as! EthereumAddress
+                        } else {
+                            return EthereumAddress(hexString: self.publicResolverAddress)!
+                        }
+                    }()
                     let resolverABI = importJson(name: "PublicResolverABI")
                     let resolver = try self.web3.eth.Contract(json: resolverABI, abiKey: nil, address: resolverAdress)
                     return resolver

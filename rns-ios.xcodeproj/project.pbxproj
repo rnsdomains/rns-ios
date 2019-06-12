@@ -10,7 +10,7 @@
 		1DC41BDDA9FEAEB85510A686 /* Pods_rns_ios_rns_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02D902C98A847C7E797B3A5 /* Pods_rns_ios_rns_iosTests.framework */; };
 		7810FA8F22A1ABC600B8D0E7 /* RnsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810FA8E22A1ABC600B8D0E7 /* RnsResolver.swift */; };
 		7810FA9122A1AC5F00B8D0E7 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7810FA9022A1AC5F00B8D0E7 /* utils.swift */; };
-		7831925622A4B1A4005AA2E0 /* resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831925522A4B1A4005AA2E0 /* resolver.swift */; };
+		7831925622A4B1A4005AA2E0 /* RnsResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831925522A4B1A4005AA2E0 /* RnsResolver.swift */; };
 		7831925722A4B256005AA2E0 /* erc677ABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B7228CD26100FFF0EA /* erc677ABI.json */; };
 		7831925822A4B256005AA2E0 /* PublicResolverABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B6228CD26100FFF0EA /* PublicResolverABI.json */; };
 		7831925922A4B256005AA2E0 /* RegistrarABI.json in Resources */ = {isa = PBXBuildFile; fileRef = 788083B8228CD26100FFF0EA /* RegistrarABI.json */; };
@@ -60,7 +60,7 @@
 /* Begin PBXFileReference section */
 		7810FA8E22A1ABC600B8D0E7 /* RnsResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnsResolver.swift; sourceTree = "<group>"; };
 		7810FA9022A1AC5F00B8D0E7 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
-		7831925522A4B1A4005AA2E0 /* resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resolver.swift; sourceTree = "<group>"; };
+		7831925522A4B1A4005AA2E0 /* RnsResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnsResolver.swift; sourceTree = "<group>"; };
 		783192BB22A5D90E005AA2E0 /* BigInt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BigInt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192BD22A5D90E005AA2E0 /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		783192BF22A5D90E005AA2E0 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +190,7 @@
 		7847049E228CAFD800477999 /* rns-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				7831925522A4B1A4005AA2E0 /* resolver.swift */,
+				7831925522A4B1A4005AA2E0 /* RnsResolver.swift */,
 				784704A1228CAFD800477999 /* Info.plist */,
 			);
 			path = "rns-iosTests";
@@ -430,7 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7831925622A4B1A4005AA2E0 /* resolver.swift in Sources */,
+				7831925622A4B1A4005AA2E0 /* RnsResolver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
