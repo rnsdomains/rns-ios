@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "Rns"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "RSK public address resolver"
 
   # This description is used to generate tags and improve search results.
