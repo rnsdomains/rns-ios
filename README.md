@@ -1,4 +1,4 @@
-<img src="/logo.png" alt="logo" height="200" />
+<img src="https://github.com/rnsdomains/rns-ios/blob/master/logo.png" alt="logo" height="200" />
 
 # `RNS-iOS`
 
