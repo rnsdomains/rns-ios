@@ -1,16 +1,25 @@
-<img src="https://github.com/rnsdomains/rns-ios/blob/master/logo.png" alt="logo" height="200" />
-
-# `RNS-iOS`
+<p align="middle">
+    <img src="https://www.rifos.org/assets/img/logo.svg" alt="logo" height="100" >
+</p>
+<h3 align="middle"><code>rns-ios</code></h3>
+<p align="middle">
+    RNS iOS SDK
+</p>
+<p align="middle">
+    <a href="https://developers.rsk.co/rif/rns/libs/iOS/">
+      <img src="https://img.shields.io/badge/-docs-brightgreen" alt="docs" />
+    </a>
+</p>
 
 Implementation for resolvers for the RIF Name Service, available for iOS.
 
-## Installation
+```
+pod "Rns"
+```
 
 RNS is available through CocoaPods. To install it, simpy add the following line to your Podfile:
 
-  `pod "Rns"`
-
-## How to use
+## Usage
 
 You will need access to a running rsk node that can made calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `Info.plist` file. 
 
